@@ -1,18 +1,31 @@
+/*Paleta de colores
+Celeste pastel pricipal: #DCEAF5
+Celeste un poco mas intenso: #AFCFE6
+Beige calido: #F4E8D8
+Marron cuero: #A66A42
+Gris: #333333 */
 /*Header*/
+* {
+    padding: 0;
+    margin: 0;
+}
 header {
-     background-color: #cfe8f7;
-    text-align: center;
-    color: #fff;
-    padding: 2em;
+     background-color: #dceaf5; /*color de fondo*/
+    text-align: center; /*centrar el texto*/
+    color: #fff; /*color de letras*/
+    padding: 2em; 
+    justify-content: center;
+    align-items: center;
 }
 header img {
-    width: 100px;
+   min-width: 100px;
     height: 100px;
     display:flex;
     flex-direction: row;
 }
 header h1 {
     color:#a66a42;
+    margin: 0;
 }
 header h2{
     color: #a66a42;
@@ -28,7 +41,7 @@ nav ul {
     list-style: none;
     /*Saca las viñetas de la lista*/
     justify-content: center;
-    gap: 3em;
+    gap: 3em; /*deja un espacio*/
 
 }
 nav ul li {
@@ -44,4 +57,37 @@ nav a:hover {
     color:#333333;
     background-color: rgb(0, 156, 177);
     border-radius: 5px;
+}
+
+/*Main*/
+main img {
+height: 150px;
+width: 300px;
+}
+
+/*footer*/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: #afcfe6;
+}
+footer img {
+    height: 30px;
+    width: 30px;
+}
+footer ul {
+    list-style: none; /*borra los puntos de las listas*/
+    padding: 0; 
+    margin: 0;
+
+}
+.propiedad {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+
 }
