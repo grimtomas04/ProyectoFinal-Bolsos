@@ -8,7 +8,9 @@ Gris: #333333 */
 * {
     padding: 0;
     margin: 0;
+    /*elimina todo el espacio interior y exterior*/
 }
+
 /*Body*/
 body {
     font-family: 'Courier New', Courier, monospace;
@@ -26,7 +28,7 @@ body h3 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /*tipo de letra*/
 }
-/*Header*/
+/*Header pricipal*/
 header {
     background-color: #dceaf5;
     /*color de fondo*/
@@ -43,32 +45,41 @@ header {
     display: flex;
 }
 
+/*para que las imagenes se modifiquen*/
 header img {
     min-width: 100px;
     /*el ancho minimo que va a tener la imagen*/
     height: 100px;
     display: flex;
+    /*para mover los elementos*/
     justify-content: flex-start;
+    /*como es row lo inicia a la izquierda horizontal*/
     align-content: flex-start;
+    /*tambien va a estar a la iquierda pero verticalmente*/
 
 }
 
+/*se modifican los titulos principales del header*/
 header h1 {
     color: #a66a42;
     margin: 0;
     /*el espacio exterior*/
 }
 
+/*para modificar los subtitulos*/
 header h2 {
     color: #a66a42;
 }
 
 /*nav*/
+/*para el menu de navegacion*/
 nav {
     background-color: #afcfe6;
     padding: 1em;
+    /*agranda el espacio del menu*/
 }
 
+/*menu de las listas*/
 nav ul {
     display: flex;
     list-style: none;
@@ -79,18 +90,22 @@ nav ul {
 
 }
 
+/*las palabras de la lista*/
 nav ul li {
     padding: 1em;
 }
 
+/*los enlaces de la lista*/
 nav a {
     color: #fff;
     font-weight: 900;
+    /*el grosor de la letra*/
     text-decoration: none;
     /*saca la linea que aparece en la lista*/
     padding: 1em;
 }
 
+/*para que aparezca color al pasar por el nombre*/
 nav a:hover {
     color: #333333;
     background-color: rgb(0, 156, 177);
@@ -99,7 +114,6 @@ nav a:hover {
 }
 
 /*Main pagina de inicio*/
-
 main {
     margin-top: 2em;
     /*espacio exterior de arriba*/
@@ -115,7 +129,7 @@ main h3 {
     color: #a66a42
 }
 
-
+/*seccion de carteras del index*/
 .container-main {
     display: flex;
     align-items: center;
@@ -124,15 +138,18 @@ main h3 {
     margin: 2em;
 }
 
+/*imagenes de la seccion de carteras*/
 .container-main img {
     min-height: 150px;
     /*altura minima*/
     width: 300px;
     margin-top: 20px;
+    /*espacio exterior de arriba*/
     margin-bottom: 20px;
+    /*espacio exterior de abajo*/
 }
 
-
+/*botones de la seccion carteras*/
 .container-main a {
     display: flex;
     background-color: #afcfe6;
@@ -149,11 +166,13 @@ main h3 {
     margin-top: 1em;
 }
 
+/*subtitulo de la seccion carteras*/
 .container-main h3 {
     margin-bottom: 1em;
 
 }
 
+/*seccion de historia en el index*/
 .container-descripcion {
     display: flex;
     align-items: center;
@@ -163,6 +182,7 @@ main h3 {
     /*pone la imagen del otro lado*/
 }
 
+/*seccion de historia en index imagen*/
 .container-descripcion img {
     display: flex;
     justify-content: flex-end;
@@ -173,17 +193,19 @@ main h3 {
     border-radius: 20px;
 }
 
+/*caja que contiene el subtitulo y parrafo*/
 .descripcion {
     background-color: #f4e8d8;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /*tipo de letra*/
     padding: 50px;
     margin-left: 30px;
+    /*espacio exterior de la derecha */
     border: 2px solid black;
     border-radius: 20px;
     text-align: center;
     font-size: larger;
     /*tamaño de letra*/
-
 }
 
 /*Main de la pagina historia*/
@@ -196,6 +218,7 @@ main h3 {
 
 }
 
+/*caja que contiene subtitulo y parrafo*/
 .container-historia {
     border: 2px solid black;
     border-radius: 20px;
@@ -206,49 +229,61 @@ main h3 {
     margin-right: 2em;
     /*espacio exterior a la derecha*/
     margin-top: 2em;
+    /*espacio exterior de arriba*/
 }
 
+/*subtitulo de la pagina historia*/
 .container-historia h3 {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     color: black;
 }
 
+/*imagenes de la pagina historia*/
 .historia-img {
     height: 400px;
     width: 600px;
     display: flex;
     gap: 3em;
     margin-top: 7em;
-    justify-content: center; /*lo centra horizontalmente*/
+    justify-content: center; 
+    /*lo centra horizontalmente*/
 }
 
+/*imagen 1*/
 #historia-img1 {
     border: 3px solid black;
     border-radius: 30px;
 }
 
+/*imagen 2*/
 #historia-img2 {
     border: 3px solid black;
     border-radius: 30px;
 }
+
 /*Main de bolsos*/
 #main-bolsos {
     width: 70%;
+    /*ocupa el 70 porciento del ancho*/
     margin: auto;
+    /*espacio automatico*/
 
 }
 
+/*clase de seccion de bolsos*/
 .bolsos {
     height: 100vh;
+    /*ocupa toda la altura*/
     display: flex;
-    flex-wrap: wrap; /*ocupa toda la pantalla dependiendo el padre*/
+    flex-wrap: wrap;
+     /*ocupa toda la pantalla dependiendo el padre*/
     justify-content: space-evenly;
     /*para que al llegar al final del ancho se baje la ultima imagen*/
     margin-top: 60px;
-
 }
 
+/*imagenes de la clase que esta en la seccion*/
 .bolsos img {
     height: 200px;
     width: 300px;
@@ -257,6 +292,7 @@ main h3 {
     margin: 30px;
 }
 
+/*clase de seccion subtitulos*/
 .bolsos h4 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: medium;
@@ -264,16 +300,19 @@ main h3 {
     text-align: center;
 }
 
+/*clase de seccion parrafos*/
 .bolsos p {
     padding: 5px;
     text-align: center;
 }
 
+/*clase del precio*/
 .precio {
     color: #C30913;
     padding: 5px;
     font-size: large;
-    font-weight: 800; /*ajusta el color mas fuerte*/
+    font-weight: 800; 
+    /*ajusta el color mas fuerte*/
 }
 
 /*Main de cartucheras*/
@@ -282,7 +321,7 @@ main h3 {
     margin: auto;
 }
 
-
+/*clase de seccion cartucheras*/
 .cartucheras {
     height: 100vh;
     display: flex;
@@ -291,6 +330,7 @@ main h3 {
     margin-top: 60px;
 }
 
+/*clase de seccion cartucheras imagenes*/
 .cartucheras img {
     height: 200px;
     width: 300px;
@@ -299,6 +339,7 @@ main h3 {
     margin: 30px;
 }
 
+/*clase de seccion cartucheras subtitulos*/
 .cartucheras h4 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: medium;
@@ -306,6 +347,7 @@ main h3 {
     text-align: center;
 }
 
+/*clase de seccion cartucheras parrafos*/
 .cartucheras p {
     padding: 5px;
     text-align: center;
@@ -313,57 +355,78 @@ main h3 {
 
 /*Main de contactos*/
 .main-contactos {
-    margin: 0 auto; /*arriba y abajo no hay nada, y se juntan los textos con auto*/
-    width: 80%; /*para que el ancho del main sea de 80 nomas*/
+    margin: 0 auto;
+     /*arriba y abajo no hay nada, y se juntan los textos con auto*/
+    width: 80%;
+     /*para que el ancho del main sea de 80 nomas*/
 }
-/*la clase de section section*/
+
+/*la clase de section*/
 .contacto {
     display: flex;
     margin: 40px;
     padding: 20px;
 }
-/*div de las redes sociales*/
+
+/*caja de las redes sociales*/
 .contactanos {
-    flex: 0 0 600px; /*lo pone al medio */
+    flex: 0 0 600px;
+     /*el primer elemento no crece, el segundo no se encoge y tercero tamaño base */
     display: flex;
     flex-direction: column;
     text-align: center;
 }
+
+/*caja de las redes sociales subtitulo*/
 .contactanos h4 {
     font-size: 50px;
     color: #a66a42;
 }
+
+/*caja de las redes sociales parrafos*/
 .contactanos p {
     font-size: medium;
     font-weight: 600;
 }
+
+/*caja de las redes sociales imagenes*/
 .contactanos img {
 height: 30px;
 width: 30px;
 }
+
+/*caja de las redes sociales lista*/
 .contactanos ul {
     list-style: none;
+    /*borra los puntos de la lista*/
     display: flex;
-    flex-direction: column; /*lo pone en columnas*/
-    align-items: center; /*centra el texto con la imagen*/
-    align-items: flex-start; /*queda a la izquierda*/
+    flex-direction: column;
+     /*lo pone en columnas*/
+    align-items: center;
+     /*centra el texto con la imagen*/
+    align-items: flex-start;
+     /*queda a la izquierda*/
 }
+
+/*caja de las redes sociales lista palabras*/
 .contactanos li {
     display: flex;
     align-items: center;
     margin: 7px;
 }
+
+/*caja de las redes sociales lista enlaces*/
 .contactanos a {
     text-decoration: none;
     color: black;
 }
 
-/*div del formulario*/
+/*caja del formulario*/
 .container-formulario {
     width: 800px;
 }
 
-/*fieldset del formulario*/
+/*caja del fieldset del formulario*/
 .formulario {
     display: flex;
     flex-direction: column;
@@ -371,17 +434,23 @@ width: 30px;
     gap: 10px;
     border: 2px solid #a66a42;
 }
+
+/*caja del fieldset del formulario titulo*/
 .formulario legend {
     color: #a66a42;
     font-size: large;
     font-weight: 800;
 }
+
+/*caja del fieldset del formulario viñetas*/
 .formulario input {
     width: 500px;
     background-color: #dceaf5;
     padding: 5px;
     color: #333333;
 }
+
+/*caja del fieldset del formulario viñeta de mensaje*/
 .formulario textarea {
     background-color: #dceaf5;
     color: black;
@@ -389,7 +458,7 @@ width: 30px;
     margin-top: 20px;
 }
 
-
+/*clase boton de enviar*/
 .btn-enviar {
     background-color: #afcfe6;
     padding: 10px;
@@ -407,11 +476,13 @@ footer {
     background-color: #afcfe6;
 }
 
+/*footer imagenes*/
 footer img {
     height: 30px;
     width: 30px;
 }
 
+/*footer listas*/
 footer ul {
     list-style: none;
     /*borra los puntos de las listas*/
@@ -420,23 +491,27 @@ footer ul {
     /*el padding 0 y margin 0 eliminan los espacios internos y externos*/
 }
 
+/*footer subtitulos*/
 footer h4 {
     font-size: larger;
     /*Tamaño de la letra*/
 }
 
+/*footer parrafo*/
 footer p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     /*Tipo de letra*/
     font-size: large;
 }
 
+/*clase de las redes sociales*/
 .izquierda {
     text-align: center;
     margin-bottom: 10px;
     /*deja espacio en la parte de arriba*/
 }
 
+/*clase de las redes sociales lista*/
 .izquierda ul {
     display: flex;
     flex-direction: column;
@@ -444,14 +519,17 @@ footer p {
     /*deja espacio en la parte de abajo*/
 }
 
+/*clase de las redes sociales imagenes*/
 .izquierda img {
     margin-bottom: 10px;
 }
 
+/*clase propiedad de*/
 .centro {
     text-align: center;
 }
 
+/*clase hecho por*/
 .derecha {
     text-align: center;
 }
