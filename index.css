@@ -215,7 +215,6 @@ main h3 {
     align-items: center; /*lo centra verticalmente*/
     flex-direction: column; /*lo pone en columna*/
 
-
 }
 
 /*caja que contiene subtitulo y parrafo*/
@@ -245,7 +244,7 @@ main h3 {
     width: 600px;
     display: flex;
     gap: 3em;
-    margin-top: 7em;
+    margin: 70px;
     justify-content: center; 
     /*lo centra horizontalmente*/
 }
@@ -442,12 +441,18 @@ width: 30px;
     font-weight: 800;
 }
 
+/*caja del fieldset del formulario label*/
+.formulario label {
+    font-weight: 600;
+}
+
 /*caja del fieldset del formulario viñetas*/
 .formulario input {
     width: 500px;
     background-color: #dceaf5;
     padding: 5px;
     color: #333333;
+    border: 2px solid black;
 }
 
 /*caja del fieldset del formulario viñeta de mensaje*/
@@ -456,6 +461,7 @@ width: 30px;
     color: black;
     border: 2px solid black;
     margin-top: 20px;
+    padding: 10px;
 }
 
 /*clase boton de enviar*/
