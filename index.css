@@ -28,6 +28,7 @@ body h3 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /*tipo de letra*/
 }
+
 /*Header pricipal*/
 header {
     background-color: #dceaf5;
@@ -38,11 +39,12 @@ header {
     /*color de letras*/
     padding: 2em;
     /*espacio interior*/
+    display: flex;
     justify-content: center;
     /*centra horizontalmente*/
     align-items: center;
     /*centra verticalmente*/
-    display: flex;
+
 }
 
 /*para que las imagenes se modifiquen*/
@@ -187,7 +189,8 @@ main h3 {
     display: flex;
     justify-content: flex-end;
     /*pone la imagen a la derecha*/
-    max-height: 300px; /*altura maxima*/
+    max-height: 300px;
+    /*altura maxima*/
     width: 300px;
     margin: 2em;
     border-radius: 20px;
@@ -210,10 +213,11 @@ main h3 {
 
 /*Main de la pagina historia*/
 .historia {
-    height: 100vh; /*ocupa toda la altura de la pantalla el contenido*/
     display: flex;
-    align-items: center; /*lo centra verticalmente*/
-    flex-direction: column; /*lo pone en columna*/
+    align-items: center;
+    /*lo centra verticalmente*/
+    flex-direction: column;
+    /*lo pone en columna*/
 
 }
 
@@ -235,7 +239,7 @@ main h3 {
 .container-historia h3 {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    color: black;
+    color: #a66a42;
 }
 
 /*imagenes de la pagina historia*/
@@ -245,7 +249,7 @@ main h3 {
     display: flex;
     gap: 3em;
     margin: 70px;
-    justify-content: center; 
+    justify-content: center;
     /*lo centra horizontalmente*/
 }
 
@@ -272,14 +276,13 @@ main h3 {
 
 /*clase de seccion de bolsos*/
 .bolsos {
-    height: 100vh;
-    /*ocupa toda la altura*/
     display: flex;
     flex-wrap: wrap;
-     /*ocupa toda la pantalla dependiendo el padre*/
+    /*ocupa toda la pantalla dependiendo el padre*/
     justify-content: space-evenly;
     /*para que al llegar al final del ancho se baje la ultima imagen*/
     margin-top: 60px;
+    margin-bottom: 50px;;
 }
 
 /*imagenes de la clase que esta en la seccion*/
@@ -289,6 +292,16 @@ main h3 {
     border: 2px solid black;
     border-radius: 20px;
     margin: 30px;
+}
+
+.bolsos h3 {
+    width: 100%;
+    /*ocupa el 100 porciento de la anchura y empieza en otra fila*/
+    margin-bottom: 20px;
+    /*espacio que deja para abajo*/
+    display: flex;
+    justify-content: center;
+    font-size: 200%;
 }
 
 /*clase de seccion subtitulos*/
@@ -310,7 +323,7 @@ main h3 {
     color: #C30913;
     padding: 5px;
     font-size: large;
-    font-weight: 800; 
+    font-weight: 800;
     /*ajusta el color mas fuerte*/
 }
 
@@ -322,11 +335,11 @@ main h3 {
 
 /*clase de seccion cartucheras*/
 .cartucheras {
-    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 60px;
+    margin-bottom: 50px;
 }
 
 /*clase de seccion cartucheras imagenes*/
@@ -336,6 +349,16 @@ main h3 {
     border: 2px solid black;
     border-radius: 20px;
     margin: 30px;
+}
+
+.cartucheras h3 {
+     width: 100%;
+    /*ocupa el 100 porciento de la anchura y empieza en otra fila*/
+    margin-bottom: 20px;
+    /*espacio que deja para abajo*/
+    display: flex;
+    justify-content: center;
+    font-size: 200%;
 }
 
 /*clase de seccion cartucheras subtitulos*/
@@ -355,9 +378,9 @@ main h3 {
 /*Main de contactos*/
 .main-contactos {
     margin: 0 auto;
-     /*arriba y abajo no hay nada, y se juntan los textos con auto*/
+    /*arriba y abajo no hay nada, y se juntan los textos con auto*/
     width: 80%;
-     /*para que el ancho del main sea de 80 nomas*/
+    /*para que el ancho del main sea de 80 nomas*/
 }
 
 /*la clase de section*/
@@ -370,7 +393,7 @@ main h3 {
 /*caja de las redes sociales*/
 .contactanos {
     flex: 0 0 600px;
-     /*el primer elemento no crece, el segundo no se encoge y tercero tamaño base */
+    /*el primer elemento no crece, el segundo no se encoge y tercero tamaño base */
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -390,8 +413,8 @@ main h3 {
 
 /*caja de las redes sociales imagenes*/
 .contactanos img {
-height: 30px;
-width: 30px;
+    height: 30px;
+    width: 30px;
 }
 
 /*caja de las redes sociales lista*/
@@ -400,11 +423,11 @@ width: 30px;
     /*borra los puntos de la lista*/
     display: flex;
     flex-direction: column;
-     /*lo pone en columnas*/
+    /*lo pone en columnas*/
     align-items: center;
-     /*centra el texto con la imagen*/
+    /*centra el texto con la imagen*/
     align-items: flex-start;
-     /*queda a la izquierda*/
+    /*queda a la izquierda*/
 }
 
 /*caja de las redes sociales lista palabras*/
